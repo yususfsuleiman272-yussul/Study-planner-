@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Study Planner</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Study Planner</h1>
+        <p>Organize your studies, achieve your goals.</p>
+    </header>
+
+    <main class="container">
+
+        <section class="welcome">
+            <h2>Welcome, Student!</h2>
+            <p>Plan your studies and keep track of your assignments.</p>
+        </section>
+
+        <section class="summary">
+
+            <div class="card">
+                <h3>Total Tasks</h3>
+                <p id="totalTasks">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Completed</h3>
+                <p id="completedTasks">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Pending</h3>
+                <p id="pendingTasks">0</p>
+            </div>
+
+        </section>
+
+        <section class="task-section">
+
+            <h2>My Study Tasks</h2>
+
+            <form id="taskForm">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter an assignment or study task"
+                    required
+                >
+
+                <input
+                    type="date"
+                    id="taskDate"
+                    aria-label="Task due date"
+                >
+
+                <button type="submit">Add Task</button>
+
+            </form>
+
+            <ul id="taskList"></ul>
+
+            <p id="emptyMessage">You have no tasks yet. Add your first task!</p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Study Planner &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
