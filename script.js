@@ -148,3 +148,14 @@ displayTasks();
 });
 
 displayTasks();
+
+const getStartedBtn = document.getElementById("getStartedBtn");
+const welcomeScreen = document.getElementById("welcomeScreen");
+const plannerApp = document.getElementById("plannerApp");
+
+getStartedBtn.addEventListener("click", function() {
+    welcomeScreen.style.display = "none";
+    plannerApp.style.display = "block";
+});
+
+
