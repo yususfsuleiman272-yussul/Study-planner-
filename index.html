@@ -1,83 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Study Planner</title>
 
-    <title>Study Planner</title>
+<link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
     <header>
-        <h1>Study Planner</h1>
-        <p>Organize your studies, achieve your goals.</p>
-    </header>
+    <h1>Study Planner</h1>
+    <p>Organize your studies, achieve your goals.</p>
+</header>
 
-    <main class="container">
+<main class="container">
 
-        <section class="welcome">
-            <h2>Welcome, Student!</h2>
-            <p>Plan your studies and keep track of your assignments.</p>
-        </section>
+    <section class="welcome">
+        <h2>Welcome, Student!</h2>
+        <p>Plan your studies and keep track of your assignments.</p>
+    </section>
 
-        <section class="summary">
+    <section class="summary">
 
-            <div class="card">
-                <h3>Total Tasks</h3>
-                <p id="totalTasks">0</p>
-            </div>
+        <div class="card">
+            <h3>Total Tasks</h3>
+            <p id="totalTasks">0</p>
+        </div>
 
-            <div class="card">
-                <h3>Completed</h3>
-                <p id="completedTasks">0</p>
-            </div>
+        <div class="card">
+            <h3>Completed</h3>
+            <p id="completedTasks">0</p>
+        </div>
 
-            <div class="card">
-                <h3>Pending</h3>
-                <p id="pendingTasks">0</p>
-            </div>
+        <div class="card">
+            <h3>Pending</h3>
+            <p id="pendingTasks">0</p>
+        </div>
 
-        </section>
+    </section>
 
-        <section class="task-section">
+    <section class="task-section">
 
-            <h2>My Study Tasks</h2>
+        <h2>My Study Tasks</h2>
 
-            <form id="taskForm">
+        <form id="taskForm">
 
-                <input
-                    type="text"
-                    id="taskInput"
-                    placeholder="Enter an assignment or study task"
-                    required
-                >
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter an assignment or study task"
+                required
+            >
 
-                <input
-                    type="date"
-                    id="taskDate"
-                    aria-label="Task due date"
-                >
+            <input
+                type="date"
+                id="taskDate"
+                aria-label="Task due date"
+            >
 
-                <button type="submit">Add Task</button>
+            <button type="submit">Add Task</button>
 
-            </form>
+        </form>
 
-            <ul id="taskList"></ul>
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search your study tasks..."
+            aria-label="Search study tasks"
+        >
 
-            <p id="emptyMessage">You have no tasks yet. Add your first task!</p>
+        <ul id="taskList"></ul>
 
-        </section>
+        <p id="emptyMessage">
+            You have no tasks yet. Add your first task!
+        </p>
 
-    </main>
+        <p id="noResultsMessage">
+            No matching tasks found.
+        </p>
 
-    <footer>
-        <p>Study Planner &copy; 2026</p>
-    </footer>
+    </section>
 
-    <script src="script.js"></script>
+</main>
+
+<footer>
+    <p>Study Planner &copy; 2026</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
+
+
